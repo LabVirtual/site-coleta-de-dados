@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+Gui nessa caixa de texto você colocará o contrato que a Simone tem para quem se interessar em depositar sua imagem no banco de daddos .</p>
+</body>
+</html>
