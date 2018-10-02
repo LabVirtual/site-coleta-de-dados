@@ -39,13 +39,11 @@ CREATE TABLE dataset.tb_modulos(
 CREATE TABLE dataset.tb_video(
     path_file VARCHAR(60) NOT NULL,
     data_postagem DATETIME NOT NULL,
-    id_video INTEGER NOT NULL
+    id_video INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
+    CONSTRAINT fk_tb_video_user_id FOREIGN KEY(user_id)
+    REFERENCES dataset.tb_usuario(user_id)
 );
-
-ALTER TABLE dataset.tb_video ADD COLUMN fk_video_user_id INTEGER;
-
-ALTER TABLE dataset.tb_video ADD FOREIGN KEY(fk_video_user_id)
-REFERENCES dataset.tb_usuario(user_id); 
 
 describe dataset.tb_video;
 describe dataset.tb_usuario;
