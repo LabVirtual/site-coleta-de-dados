@@ -16,11 +16,11 @@ CREATE SCHEMA dataset;
 CREATE TABLE dataset.tb_usuario(
     nome 			VARCHAR(45) NOT NULL,
     sobrenome 		VARCHAR(45) NOT NULL,
-    user_id 		INTEGER,
+    user_id 		INTEGER AUTO_INCREMENT ,
     cpf 			INTEGER ,
     senha 			VARCHAR(15) NOT NULL,
     email 			VARCHAR(45),
-    sexo 			BOOLEAN NOT NULL,
+    sexo 			BOOLEAN NOT NULL, 
     nascionalidade 	VARCHAR(15) NOT NULL,
     cidade 			VARCHAR(45) NOT NULL,
     estado 			CHAR(2) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE dataset.tb_modulos(
 CREATE TABLE dataset.tb_video(
     path_file VARCHAR(60) NOT NULL,
     data_postagem DATETIME NOT NULL,
-    id_video DATETIME NOT NULL
+    id_video INTEGER NOT NULL
 );
 
 ALTER TABLE dataset.tb_video ADD COLUMN fk_video_user_id INTEGER;
