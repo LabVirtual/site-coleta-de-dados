@@ -1,14 +1,4 @@
 
-/*
-CREATE TABLE dataset.tb_video(
-    --user_id         INTEGER CONSTRAINT nn_user_id NOT NULL,
-    path_file       VARCHAR(60) NOT NULL,
-    data_postagem   DATETIME NOT NULL,
-    id_video        DATETIME NOT NULL,
-    CONSTRAINT fk_video_user_id FOREIGN KEY(user_id)
-        REFERENCES dataset.tb_usuario(user_id)
-);*/
-
 DROP SCHEMA dataset;
 
 CREATE SCHEMA dataset;
@@ -32,7 +22,20 @@ CREATE TABLE dataset.tb_usuario(
 );
 
 CREATE TABLE dataset.tb_modulos(
-    disponivel      INTEGER NOT NULL
+    user_id   INTEGER,
+    modA      BOOLEAN,
+    modB      BOOLEAN,
+    modC      BOOLEAN,
+    modD      BOOLEAN,
+    modE      BOOLEAN,
+    modF      BOOLEAN,
+    modG      BOOLEAN,
+    modH      BOOLEAN,
+    modI      BOOLEAN,
+    modJ      BOOLEAN,
+    modK      BOOLEAN,
+    modL      BOOLEAN,
+    CONSTRAINT fk_mod_userid FOREIGN KEY(user_id) REFERENCES dataset.tb_modulos(user_id)
 );
 
 
