@@ -2,6 +2,9 @@
 <html lang="pt-br">
 
 <head>
+    <style>
+        
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -67,14 +70,16 @@
 
 
 
-                            <video id="gum" autoplay muted></video>
-                        <video id="recorded" loop controls></video>
-
+                            <video id="recorded" loop controls id="gum" autoplay muted>
+                         </video>
+                         <video id="video" width="320" height="240" preload autoplay loop muted></video>
                         <div>
                             <button id="record" disabled>Start Recording</button>
                             <button id="play" disabled>Play</button>
                             <button id="download" disabled>Enviar</button>
+                            
                         </div>
+                        
 
                     </div>
                 </div>
@@ -93,6 +98,28 @@
     function chamadadevideo() {
         window.open('./index2.html','video',' menubar=no, resizable=0,dependent=0,status=0,width=500,height=400,left=425,top=150')
     }
+    function init(){
+                
+                const video = document.getElementById('video')
+                const canvas = document.getElementById('canvas')
+                const context = canvas.getContext('2d')
+                const tracker = new tracking.ObjectTracker('face')
+                tracking.track('#video', tracker, { camera: true })
+                tracker.on('track', event => {
+                    context.clearRect(0,0,canvas.width, canvas.height)
+                    event.data.forEach( rect => {
+                        context.strokeStyle = '#ff0000'
+                        context.lineWidth = 2
+                        context.strokeRect(rect.x, rect.y, rect.width, rect.height)
+                        
+                    
+                    })
+                })
+
+                
+            }
+
+            window.onload = init()
 </script>
 
 </div>
