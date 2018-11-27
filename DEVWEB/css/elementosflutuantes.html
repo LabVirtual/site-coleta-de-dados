@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elementos flutuantes</title> 
+	<meta charset="utf-8">
+	<style type="text/css">
+		#resumo{
+			border: 1px solid gray;
+			width: 300px;
+			height: 300px;
+			float: left; /*elementos flutuantes sao usados para designar em qual lugar da pagina queremos que o conteudo fique.
+			margin: 10px;*/
+		}
+		.clear{
+			clear: both;/*clear é usado para limpar o "float" dos elementos ja usados,o texto fica abaixo do conteudo com float*/
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div id="resumo">
+		<h2>Elementos Flutuantes</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id blandit ex, a ultricies odio. Nulla et suscipit quam, vel porta nibh. Donec congue non erat ut sollicitudin. Morbi pulvinar nunc id elit tristique hendrerit. Aenean commodo et sem sed rutrum. Cras cursus cursus rhoncus. Fusce a iaculis nisl. Phasellus id augue est.
+			</p>
+
+	</div>
+	<div id="resumo">
+		<h2>Elementos Flutuantes</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id blandit ex, a ultricies odio. Nulla et suscipit quam, vel porta nibh. Donec congue non erat ut sollicitudin. Morbi pulvinar nunc id elit tristique hendrerit. Aenean commodo et sem sed rutrum. Cras cursus cursus rhoncus. Fusce a iaculis nisl. Phasellus id augue est.
+			</p>
+
+	</div>
+	<div class="clear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id blandit ex, a ultricies odio. Nulla et suscipit quam, vel porta nibh. Donec congue non erat ut sollicitudin. Morbi pulvinar nunc id elit tristique hendrerit. Aenean commodo et sem sed rutrum. Cras cursus cursus rhoncus. Fusce a iaculis nisl. Phasellus id augue est.</div>
+	<div>Todos os direitos reservados</div>
+</body>
+</html>

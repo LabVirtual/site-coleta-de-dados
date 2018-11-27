@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formatação de texto</title> <!-- div serve para dividir ou estruturar os conteudos(secoes,elementos ou blocos) do site -->
+	<meta charset="utf-8">
+	<style type="text/css">
+	div{
+		font-size: 16px;
+	}
+	.texto{
+		font-size: 1em;/*px,%,em=quer dizer que os textos ficam proporcionais ao texto externo.Por exemplo, a classe está interna a tag div, então esse termo "em" fara com que o texto que está na classe se torne proporcional ao texto encontrado na tag div*/
+	}
+	.negrito{
+		font-weight: bold;/*de 100 ate 900, (tons de negrito)*/
+	}
+	p{
+		font-size: 20px;
+	}
+	.estilo{
+		font-style: italic;
+	}
+	.padrao{
+		font: bold 32px serif;
+	}
+	.formatacao{
+		text-decoration: overline;/*decoracao em apenas 1 palavra,underline,overline...*/
+	}
+
+	</style>
+	
+
+</head>
+<body>
+<div>
+	<p class="texto">The font-family property should hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font, and so on.</p>
+	<p class="negrito">Conteúdo</p>
+	<p><span class="formatacao">Conteúdo 2</span></p>
+
+</div>
+
+
+</body>
+</html>

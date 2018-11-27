@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 16px;
+	background: #f3f3f3;
+}
+#navegacao{
+	background: #fff;
+	border-bottom: 1px solid #d8d8d8;
+	height: 45px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#area{
+	width: 900px;
+	margin: 0 auto;
+	
+	
+	
+}
+.verde{
+	color: #b9c941;
+}
+#logo{
+	float: left;
+}
+#menu{
+	float: right;
+	
+	padding-top: 10px;
+}
+#conteudo{
+	width: 900px;
+	margin: 55px auto;
+	border: 1px solid blue;
+	
+}
+#cconteudo{
+	width: 900px;
+	border: 1px solid red;
+	height: 500px;
+	margin-bottom: 10px;
+
+}

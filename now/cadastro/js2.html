@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Aula vídeo</title>
+
+  </head>
+  <body>
+
+    <!--HTML5 tag video-->
+    <video id="video" width="420" height="375" >
+      <source src="/Documentos/victor/site-coleta-de-dados/now/gravacao" type="video/mp4">
+    </video>
+    <!--control buttons-->
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+
+    <script>
+    //declare variable
+    var myVideo = document.querySelecton("#video");
+
+    //functions commands
+    function playPause(){
+        if(myVideo.paused)
+        myVideo.play();
+        else
+          myVideo.pause();
+        }
+    function makeBig(){
+      myVideo.width = 550
+    }
+    function makeSmall(){
+      myVideo.width = 320;
+    }
+    function makeNormal(){
+      myVideo.width = 420;
+    }
+    </script>
+
+
+    </script>
+  </body>
+</html>

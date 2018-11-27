@@ -13,8 +13,8 @@ CREATE TABLE dataset.tb_usuario(
     estado 			CHAR(2) NOT NULL,
     modulo_atual 	INTEGER,
     num_video_atual INTEGER,
-	dt_nascimento 	DATETIME NOT NULL,
-    dt_cadastro 	DATETIME NOT NULL,
+	dt_nascimento 	DATE NOT NULL,
+    dt_cadastro 	DATE NOT NULL,
 
     CONSTRAINT pk_user_id PRIMARY KEY(user_id)
 );
